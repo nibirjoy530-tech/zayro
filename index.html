@@ -28,7 +28,7 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Meta Pixel Code (Active ID: 4359430210987692) -->
+  <!-- Meta Pixel Code (Browser Only - Active ID: 4359430210987692) -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -39,6 +39,7 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '4359430210987692');
+    fbq('track', 'PageView');
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
@@ -83,10 +84,9 @@
       </div>
     </div>
 
-    <!-- Clean Brand Header (Admin Completely Hidden) -->
+    <!-- Clean Brand Header -->
     <header class="border-b border-zinc-900 bg-zinc-950/90 backdrop-blur">
       <div class="max-w-5xl mx-auto px-4 py-3.5 sm:py-4 flex items-center justify-between gap-2">
-        <!-- Secret 5-Tap Logo Trigger for Admin -->
         <div onclick="handleSecretAdminTap()" class="min-w-0 select-none cursor-default">
           <span class="text-2xl sm:text-3xl font-black tracking-[0.2em] text-white">
             ZAY<span class="text-red-600">RO</span>
@@ -96,7 +96,6 @@
           </p>
         </div>
 
-        <!-- Customer-friendly Trust Badge -->
         <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-900 border border-zinc-800 text-[11px] sm:text-xs font-bold text-emerald-400 shrink-0 bangla-bold">
           <i data-lucide="shield-check" class="w-4 h-4"></i>
           <span>Cash on Delivery</span>
@@ -107,7 +106,6 @@
     <!-- 2. Hero Section -->
     <section class="max-w-5xl mx-auto px-4 pt-6 pb-10 sm:pt-12 sm:pb-14">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
-        <!-- Left Copy -->
         <div class="lg:col-span-6 space-y-4 sm:space-y-5 text-center lg:text-left">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/15 border border-red-500/30 text-red-400 text-xs font-bold">
             <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
@@ -132,7 +130,6 @@
           </div>
         </div>
 
-        <!-- Right Product Image Card + ORDER NOW BUTTON DIRECTLY BELOW IMAGE -->
         <div class="lg:col-span-6 w-full min-w-0">
           <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-2xl space-y-4">
             <div class="flex items-center justify-between gap-2">
@@ -140,13 +137,11 @@
               <span id="preview-badge" class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-red-600 text-white">Best Seller</span>
             </div>
 
-            <!-- Dynamic Real Hoodie Product Image Box -->
             <div
               id="preview-image-box"
               class="aspect-square sm:aspect-[4/3] w-full rounded-xl bg-zinc-950 border border-zinc-700/60 flex items-center justify-center relative overflow-hidden"
             ></div>
 
-            <!-- Color Swatch Selector -->
             <div>
               <p class="text-xs text-zinc-400 mb-2 font-bold">
                 কালার পছন্দ করুন: <strong id="preview-color-name" class="text-white">Maroon/White</strong>
@@ -154,7 +149,6 @@
               <div id="swatch-container" class="flex flex-wrap gap-1.5 sm:gap-2"></div>
             </div>
 
-            <!-- ORDER NOW BUTTON DIRECTLY UNDER THE PRODUCT IMAGE -->
             <button
               type="button"
               onclick="orderSelectedPreviewColor()"
@@ -183,7 +177,7 @@
               </div>
               <h3 class="font-bold text-white text-base">300 GSM Phillips Cotton</h3>
               <p class="text-xs text-zinc-300 font-bold leading-relaxed bangla-bold">
-                সুপার হেভিওয়েট ও সফট ইনসাইড ব্রাশড ফ্লিস, যা তীব্র শীতেও দিবে সর্বোচ্চ আরাম।
+                সুপার হেভিওয়েট ও সফট ইনসাইড ব্রাশড ফ্লিস, যা তীব্র শীতেও দিবে সর্বোচ্চ আরাম।
               </p>
             </div>
 
@@ -193,7 +187,7 @@
               </div>
               <h3 class="font-bold text-white text-base">3-Day Money-Back Guarantee</h3>
               <p class="text-xs text-zinc-300 font-bold leading-relaxed bangla-bold">
-                প্রোডাক্টে কোনো সমস্যা থাকলে বা পছন্দ না হলে ৩ দিনের মধ্যে ১০০% টাকা ফেরতের নিশ্চয়তা।
+                প্রোডাক্টে কোনো সমস্যা থাকলে বা পছন্দ না হলে ৩ দিনের মধ্যে ১০০% টাকা ফেরতের নিশ্চয়তা।
               </p>
             </div>
 
@@ -203,7 +197,7 @@
               </div>
               <h3 class="font-bold text-white text-base">10-Year ZAYRO VIP Membership</h3>
               <p class="text-xs text-zinc-300 font-bold leading-relaxed bangla-bold">
-                প্রথম অর্ডারেই পাচ্ছেন VIP কার্ড ও পরবর্তী সকল অর্ডারে ১০% নিশ্চিত ছাড়!
+                প্রথম অর্ডারেই পাচ্ছেন VIP কার্ড ও পরবর্তী সকল অর্ডারে ১০% নিশ্চিত ছাড়!
               </p>
             </div>
 
@@ -219,12 +213,11 @@
           </div>
         </div>
 
-        <!-- Colors & Size Chart -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
           <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4 sm:p-5">
             <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2 bangla-bold">
               <i data-lucide="sparkles" class="w-4 h-4 text-red-500"></i>
-              Available Colors (৫টি আকর্ষণীয় কালার)
+              Available Colors (৫টি আকর্ষণীয় কালার)
             </h3>
             <div id="color-guide-list" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5"></div>
           </div>
@@ -264,12 +257,11 @@
             অর্ডার কনফার্ম করতে নিচের ফর্মটি পূরণ করুন
           </h2>
           <p class="text-xs sm:text-sm text-red-100 mt-1 font-bold bangla-bold">
-            কালার সিলেক্ট করলেই অটোমেটিক হুডির ছবি সেট হয়ে যাবে
+            কালার সিলেক্ট করলেই অটোমেটিক হুডির ছবি সেট হয়ে যাবে
           </p>
         </div>
 
         <form id="checkout-form" class="p-4 sm:p-8 space-y-6">
-          <!-- Step 1: Dynamic Cart Items WITH AUTO PRODUCT IMAGE -->
           <div class="space-y-3">
             <div class="flex items-center justify-between gap-2">
               <label class="text-xs sm:text-sm font-bold text-zinc-100 flex items-center gap-2 bangla-bold">
@@ -291,7 +283,6 @@
             </button>
           </div>
 
-          <!-- Step 2: Customer Info -->
           <div class="space-y-4 pt-4 border-t border-zinc-800">
             <label class="text-xs sm:text-sm font-bold text-zinc-100 flex items-center gap-2 bangla-bold">
               <i data-lucide="user" class="w-4 h-4 text-red-500 shrink-0"></i>
@@ -340,11 +331,10 @@
             </div>
           </div>
 
-          <!-- Step 3: Delivery Options -->
           <div class="space-y-3 pt-4 border-t border-zinc-800">
             <label class="text-xs sm:text-sm font-bold text-zinc-100 flex items-center gap-2 bangla-bold">
               <i data-lucide="truck" class="w-4 h-4 text-red-500 shrink-0"></i>
-              ৩. ডেলিভারি এরিয়া সিলেক্ট করুন
+              ৩. ডেলিভারি এরিয়া সিলেক্ট করুন
             </label>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -366,7 +356,6 @@
             </div>
           </div>
 
-          <!-- Step 4: Payment Method (COD / bKash / Nagad) -->
           <div class="space-y-3 pt-4 border-t border-zinc-800">
             <label class="text-xs sm:text-sm font-bold text-zinc-100 flex items-center gap-2 bangla-bold">
               <i data-lucide="wallet" class="w-4 h-4 text-red-500 shrink-0"></i>
@@ -378,7 +367,7 @@
                 <input type="radio" name="paymentMethod" value="COD" checked onchange="setPaymentMethod('COD')" class="accent-red-600 w-4 h-4" />
                 <div>
                   <p class="text-sm font-bold text-white">Cash on Delivery</p>
-                  <p class="text-[11px] font-bold text-zinc-400 bangla-bold">হাতে পেয়ে টাকা দিন</p>
+                  <p class="text-[11px] font-bold text-zinc-400 bangla-bold">হাতে পেয়ে টাকা দিন</p>
                 </div>
               </label>
 
@@ -399,7 +388,6 @@
               </label>
             </div>
 
-            <!-- bKash / Nagad Instructions Box WITH COPY BUTTON -->
             <div id="mfs-box" class="hidden bg-zinc-950 border border-pink-500/40 rounded-xl p-4 space-y-3">
               <div class="text-xs sm:text-sm font-bold text-zinc-200 leading-relaxed bangla-bold">
                 <p id="mfs-instruction"></p>
@@ -421,7 +409,7 @@
               </div>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label class="block text-xs font-bold text-zinc-300 mb-1 bangla-bold">যে নম্বর থেকে টাকা পাঠিয়েছেন *</label>
+                  <label class="block text-xs font-bold text-zinc-300 mb-1 bangla-bold">যে নম্বর থেকে টাকা পাঠিয়েছেন *</label>
                   <input id="mfs-sender" type="tel" placeholder="01XXXXXXXXX" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3 py-2 text-base sm:text-sm font-bold text-white focus:outline-none focus:border-pink-500" />
                 </div>
                 <div>
@@ -432,7 +420,6 @@
             </div>
           </div>
 
-          <!-- Dynamic Order Summary -->
           <div class="bg-zinc-950 border border-zinc-800 rounded-xl p-4 sm:p-5 space-y-2.5">
             <div class="flex justify-between text-sm text-zinc-300 font-bold">
               <span id="summary-subtotal-label">Subtotal (1 × ৳899)</span>
@@ -446,7 +433,7 @@
 
             <div id="free-delivery-banner" class="hidden bg-emerald-500/10 border border-emerald-500/30 rounded-lg px-3 py-2 text-center">
               <p class="text-xs sm:text-sm font-bold text-emerald-400 bangla-bold">
-                🎉 অভিনন্দন! আপনি ফ্রি ডেলিভারি পেয়েছেন!
+                🎉 অভিনন্দন! আপনি ফ্রি ডেলিভারি পেয়েছেন!
               </p>
             </div>
 
@@ -474,7 +461,6 @@
       </div>
     </section>
 
-    <!-- Footer (Secret 5-Tap Trigger also on Copyright) -->
     <footer class="max-w-5xl mx-auto px-4 py-8 text-center border-t border-zinc-900 text-xs text-zinc-500 font-bold space-y-1">
       <p class="text-zinc-300 tracking-widest uppercase">ZAYRO — Wear Your Identity</p>
       <p class="text-emerald-400">WhatsApp Support: 01940080878</p>
@@ -482,9 +468,7 @@
     </footer>
   </div>
 
-  <!-- ========================================================= -->
-  <!-- ফ্লোটিং WhatsApp কাস্টমার সাপোর্ট বাটন                    -->
-  <!-- ========================================================= -->
+  <!-- Floating WhatsApp Button -->
   <div class="fixed bottom-5 right-5 z-50">
     <a href="https://wa.me/8801940080878?text=Ami%20ZAYRO%20theke%20Jeep%20Spirit%20Hoodie%20order%20korte%20chai."
        target="_blank"
@@ -492,7 +476,7 @@
        onclick="trackWhatsAppContact()"
        class="wa-float-btn flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20ba5a] text-white px-4 py-3 rounded-full shadow-2xl transition duration-300 transform hover:scale-105">
       <i class="fa-brands fa-whatsapp text-2xl"></i>
-      <span class="font-bold text-xs md:text-sm tracking-wide hidden sm:inline bangla-bold">সাপোর্ট প্রয়োজন?</span>
+      <span class="font-bold text-xs md:text-sm tracking-wide hidden sm:inline bangla-bold">সাপোর্ট প্রয়োজন?</span>
     </a>
   </div>
 
@@ -513,7 +497,7 @@
         </span>
 
         <h1 class="text-xl sm:text-3xl font-extrabold text-white leading-snug mb-2 bangla-bold">
-          আপনার অর্ডারটি সফলভাবে কনফার্ম হয়েছে!
+          আপনার অর্ডারটি সফলভাবে কনফার্ম হয়েছে!
         </h1>
         <p class="text-sm text-zinc-300 font-bold bangla-bold">
           ধন্যবাদ <span id="ty-cust-name" class="text-white"></span>, ZAYRO-এর সাথে থাকার জন্য।
@@ -550,14 +534,14 @@
         <div class="bg-zinc-800/60 border border-zinc-700/70 rounded-xl p-4 flex items-start gap-3">
           <i data-lucide="package-check" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
           <p class="text-xs sm:text-sm text-zinc-100 font-bold leading-relaxed bangla-bold">
-            আপনার ঠিকানায় খুব দ্রুত পার্সেল পৌঁছে যাবে। পার্সেল খুলে চেক করে পেমেন্ট করবেন। ৩ দিনের মানিব্যাক গ্যারান্টি রয়েছে। WhatsApp: 01940080878
+            আপনার ঠিকানায় খুব দ্রুত পার্সেল পৌঁছে যাবে। পার্সেল খুলে চেক করে পেমেন্ট করবেন। ৩ দিনের মানিব্যাক গ্যারান্টি রয়েছে। WhatsApp: 01940080878
           </p>
         </div>
 
         <div class="bg-gradient-to-r from-amber-500/15 via-red-600/15 to-amber-500/15 border border-amber-500/40 rounded-xl p-4 flex items-start gap-3">
           <i data-lucide="crown" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
           <p class="text-xs sm:text-sm text-amber-100 font-bold leading-relaxed bangla-bold">
-            🎉 ZAYRO-তে প্রথম অর্ডারের জন্য আপনাকে আমাদের 10-Year VIP মেম্বারশিপ দেওয়া হলো! পরবর্তী যেকোনো অর্ডারে পাবেন ১০% নিশ্চিত ছাড়!
+            🎉 ZAYRO-তে প্রথম অর্ডারের জন্য আপনাকে আমাদের 10-Year VIP মেম্বারশিপ দেওয়া হলো! পরবর্তী যেকোনো অর্ডারে পাবেন ১০% নিশ্চিত ছাড়!
           </p>
         </div>
 
@@ -573,19 +557,18 @@
   </div>
 
   <!-- ========================================================= -->
-  <!-- GA4-STYLE HIDDEN ADMIN PANEL & SERVER-SIDE TRACKER        -->
+  <!-- HIDDEN ADMIN PANEL (Browser Pixel & Orders)               -->
   <!-- ========================================================= -->
   <div id="admin-modal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-2 sm:p-5 overflow-y-auto">
-    <div class="w-full max-w-6xl bg-[#111318] border border-zinc-700/80 rounded-2xl shadow-2xl overflow-hidden my-auto max-h-[93vh] flex flex-col">
-      <!-- Top Bar (GA4 Style Header) -->
+    <div class="w-full max-w-5xl bg-[#111318] border border-zinc-700/80 rounded-2xl shadow-2xl overflow-hidden my-auto max-h-[93vh] flex flex-col">
       <div class="px-4 sm:px-6 py-3.5 bg-[#0b0d11] border-b border-zinc-800 flex items-center justify-between gap-2">
         <div class="flex items-center gap-2.5 min-w-0">
           <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shrink-0">
             <i data-lucide="bar-chart-3" class="w-4 h-4 text-white"></i>
           </div>
           <div class="min-w-0">
-            <h2 class="text-sm sm:text-base font-extrabold text-white truncate">ZAYRO Analytics & Server-Side Tracker</h2>
-            <p class="text-[10px] sm:text-xs text-zinc-400 font-bold truncate">GA4 Style Realtime Funnel + Meta Pixel (4359430210987692)</p>
+            <h2 class="text-sm sm:text-base font-extrabold text-white truncate">ZAYRO Admin Panel</h2>
+            <p class="text-[10px] sm:text-xs text-zinc-400 font-bold truncate">Browser Meta Pixel Only (4359430210987692)</p>
           </div>
         </div>
         <button onclick="closeAdminModal()" class="p-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 cursor-pointer shrink-0">
@@ -593,7 +576,6 @@
         </button>
       </div>
 
-      <!-- Admin Login View -->
       <div id="admin-login-view" class="p-6 sm:p-10 text-center space-y-4">
         <p class="text-sm font-bold text-zinc-300 bangla-bold">এডমিন প্যানেলে প্রবেশ করতে PIN দিন (ডিফল্ট PIN: <span class="text-amber-400">1234</span>)</p>
         <div class="max-w-xs mx-auto flex gap-2">
@@ -603,127 +585,34 @@
         <p id="admin-pin-error" class="hidden text-xs font-bold text-red-400">ভুল PIN! আবার চেষ্টা করুন।</p>
       </div>
 
-      <!-- Admin Dashboard Content -->
       <div id="admin-dashboard-view" class="hidden flex-1 overflow-y-auto overflow-x-hidden p-4 sm:p-6 space-y-5">
-        <!-- Navigation Tabs -->
         <div class="flex flex-wrap gap-2 border-b border-zinc-800 pb-3">
-          <button onclick="switchAdminTab('analytics')" id="tab-btn-analytics" class="px-3.5 py-2 rounded-lg bg-blue-600 text-white text-xs font-bold cursor-pointer flex items-center gap-1.5">
-            <i data-lucide="activity" class="w-3.5 h-3.5"></i> GA4 Analytics & Server Tracker
-          </button>
-          <button onclick="switchAdminTab('orders')" id="tab-btn-orders" class="px-3.5 py-2 rounded-lg bg-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer flex items-center gap-1.5">
+          <button onclick="switchAdminTab('orders')" id="tab-btn-orders" class="px-3.5 py-2 rounded-lg bg-blue-600 text-white text-xs font-bold cursor-pointer flex items-center gap-1.5">
             <i data-lucide="package" class="w-3.5 h-3.5"></i> Orders List
           </button>
           <button onclick="switchAdminTab('settings')" id="tab-btn-settings" class="px-3.5 py-2 rounded-lg bg-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer flex items-center gap-1.5">
-            <i data-lucide="settings" class="w-3.5 h-3.5"></i> Pixel, Telegram & Payment
+            <i data-lucide="settings" class="w-3.5 h-3.5"></i> Telegram & Payment Settings
           </button>
         </div>
 
-        <!-- TAB 1: GOOGLE ANALYTICS (GA4) STYLE SERVER-SIDE DASHBOARD -->
-        <div id="admin-tab-analytics" class="space-y-5">
-          <!-- Meta Pixel & Server-Side Health Bar -->
-          <div class="bg-[#181b22] border border-zinc-800 rounded-xl p-4 flex flex-wrap items-center justify-between gap-3">
-            <div class="space-y-1">
-              <div class="flex items-center gap-2">
-                <span class="text-xs font-bold uppercase tracking-wider text-zinc-400">Meta Pixel Status:</span>
-                <span id="pixel-live-status" class="text-xs font-extrabold px-2.5 py-0.5 rounded-full bg-zinc-800 text-zinc-300">Checking...</span>
-              </div>
-              <p id="pixel-status-detail" class="text-[11px] text-zinc-400 font-bold"></p>
+        <div class="bg-[#181b22] border border-zinc-800 rounded-xl p-4 flex flex-wrap items-center justify-between gap-3">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold uppercase tracking-wider text-zinc-400">Meta Pixel Status:</span>
+              <span id="pixel-live-status" class="text-xs font-extrabold px-2.5 py-0.5 rounded-full bg-zinc-800 text-zinc-300">Checking...</span>
             </div>
-            <button
-              type="button"
-              onclick="fireTestPixelEvent()"
-              class="px-3.5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-xs font-bold text-white cursor-pointer shrink-0"
-            >
-              ⚡ Test Pixel Event
-            </button>
+            <p id="pixel-status-detail" class="text-[11px] text-zinc-400 font-bold"></p>
           </div>
-
-          <!-- GA4 Style 6-Card Metric Strip -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-            <div class="bg-[#181b22] border border-zinc-800 border-t-2 border-t-blue-500 p-3.5 rounded-xl">
-              <p class="text-[11px] text-zinc-400 font-bold">Visitors (PageView)</p>
-              <p id="ga-visitors" class="text-2xl font-black text-white mt-1">0</p>
-              <span class="text-[10px] text-blue-400 font-bold">Realtime Active</span>
-            </div>
-            <div class="bg-[#181b22] border border-zinc-800 border-t-2 border-t-cyan-500 p-3.5 rounded-xl">
-              <p class="text-[11px] text-zinc-400 font-bold">Product Views</p>
-              <p id="ga-views" class="text-2xl font-black text-white mt-1">0</p>
-              <span class="text-[10px] text-cyan-400 font-bold">ViewContent</span>
-            </div>
-            <div class="bg-[#181b22] border border-zinc-800 border-t-2 border-t-amber-500 p-3.5 rounded-xl">
-              <p class="text-[11px] text-zinc-400 font-bold">Add to Cart</p>
-              <p id="ga-atc" class="text-2xl font-black text-white mt-1">0</p>
-              <span class="text-[10px] text-amber-400 font-bold">Cart Actions</span>
-            </div>
-            <div class="bg-[#181b22] border border-zinc-800 border-t-2 border-t-purple-500 p-3.5 rounded-xl">
-              <p class="text-[11px] text-zinc-400 font-bold">Checkouts</p>
-              <p id="ga-checkout" class="text-2xl font-black text-white mt-1">0</p>
-              <span class="text-[10px] text-purple-400 font-bold">InitiateCheckout</span>
-            </div>
-            <div class="bg-[#181b22] border border-zinc-800 border-t-2 border-t-emerald-500 p-3.5 rounded-xl">
-              <p class="text-[11px] text-zinc-400 font-bold">Purchases & Conv.</p>
-              <p id="ga-purchase" class="text-2xl font-black text-emerald-400 mt-1">0</p>
-              <span id="ga-conv-rate" class="text-[10px] text-emerald-400 font-bold">0% Conv. Rate</span>
-            </div>
-            <div class="bg-[#181b22] border border-zinc-800 border-t-2 border-t-green-500 p-3.5 rounded-xl">
-              <p class="text-[11px] text-zinc-400 font-bold">Total Revenue</p>
-              <p id="ga-revenue" class="text-xl sm:text-2xl font-black text-emerald-400 mt-1">৳0</p>
-              <span id="ga-whatsapp" class="text-[10px] text-green-400 font-bold">0 WA Clicks</span>
-            </div>
-          </div>
-
-          <!-- GA4 Funnel & Device/Color Breakdown -->
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
-            <!-- Funnel Chart -->
-            <div class="lg:col-span-7 bg-[#181b22] border border-zinc-800 rounded-xl p-4 space-y-3">
-              <h3 class="text-sm font-bold text-white flex items-center gap-2">
-                <i data-lucide="filter" class="w-4 h-4 text-blue-400"></i>
-                E-Commerce Conversion Funnel (GA4 Style)
-              </h3>
-              <div id="ga-funnel-bars" class="space-y-3 text-xs"></div>
-            </div>
-
-            <!-- Device & Color Engagement -->
-            <div class="lg:col-span-5 bg-[#181b22] border border-zinc-800 rounded-xl p-4 space-y-4">
-              <div>
-                <h3 class="text-sm font-bold text-white mb-2 flex items-center gap-2">
-                  <i data-lucide="smartphone" class="w-4 h-4 text-amber-400"></i>
-                  Visitor Devices & Color Views
-                </h3>
-                <div id="ga-device-stats" class="grid grid-cols-2 gap-2 text-xs mb-3"></div>
-                <div id="ga-color-stats" class="space-y-1.5 text-xs"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Realtime Event Stream Table -->
-          <div class="bg-[#181b22] border border-zinc-800 rounded-xl p-4 space-y-3">
-            <div class="flex flex-wrap justify-between items-center gap-2">
-              <h3 class="text-sm font-bold text-white flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                Realtime Server-Side Event Stream (Deduplicated EventID)
-              </h3>
-              <button onclick="clearEventLogs()" class="text-xs text-red-400 hover:text-red-300 font-bold cursor-pointer">Clear Analytics</button>
-            </div>
-            <div class="overflow-x-auto">
-              <table class="w-full text-xs text-left">
-                <thead class="bg-zinc-950 text-zinc-400 uppercase font-bold">
-                  <tr>
-                    <th class="px-3 py-2">Event</th>
-                    <th class="px-3 py-2">Details / Value</th>
-                    <th class="px-3 py-2">Device</th>
-                    <th class="px-3 py-2">Server CAPI Status</th>
-                    <th class="px-3 py-2">Time</th>
-                  </tr>
-                </thead>
-                <tbody id="admin-tracker-logs" class="divide-y divide-zinc-800"></tbody>
-              </table>
-            </div>
-          </div>
+          <button
+            type="button"
+            onclick="fireTestPixelEvent()"
+            class="px-3.5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-xs font-bold text-white cursor-pointer shrink-0"
+          >
+            ⚡ Test Pixel Event
+          </button>
         </div>
 
-        <!-- TAB 2: ORDERS LIST -->
-        <div id="admin-tab-orders" class="hidden space-y-3">
+        <div id="admin-tab-orders" class="space-y-3">
           <div class="flex justify-between items-center gap-2">
             <h3 class="text-sm font-bold text-white">Customer Orders</h3>
             <button onclick="exportOrdersCSV()" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-xs font-bold text-white cursor-pointer">Export CSV</button>
@@ -731,26 +620,7 @@
           <div id="admin-orders-list" class="space-y-2.5"></div>
         </div>
 
-        <!-- TAB 3: PIXEL, CAPI, TELEGRAM & PAYMENT SETTINGS -->
         <div id="admin-tab-settings" class="hidden space-y-4">
-          <div class="bg-[#181b22] border border-zinc-800 rounded-xl p-4 space-y-3">
-            <h3 class="text-sm font-bold text-white">Server-Side CAPI & GA4 Configuration</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              <div>
-                <label class="block text-[11px] font-bold text-zinc-400 mb-1">Server-Side CAPI Webhook URL</label>
-                <input id="cfg-capi-url" type="url" placeholder="https://your-worker.workers.dev/capi" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3 py-2 text-xs font-bold text-white" />
-              </div>
-              <div>
-                <label class="block text-[11px] font-bold text-zinc-400 mb-1">Meta CAPI Test Event Code</label>
-                <input id="cfg-capi-test" type="text" placeholder="TEST12345" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3 py-2 text-xs font-bold text-white" />
-              </div>
-              <div>
-                <label class="block text-[11px] font-bold text-zinc-400 mb-1">Google Analytics 4 ID (Optional)</label>
-                <input id="cfg-ga4-id" type="text" placeholder="G-XXXXXXXXXX" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3 py-2 text-xs font-bold text-white" />
-              </div>
-            </div>
-          </div>
-
           <div class="bg-[#181b22] border border-zinc-800 rounded-xl p-4 space-y-3">
             <h3 class="text-sm font-bold text-white">Telegram Order Alert Setup</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -793,7 +663,7 @@
   </div>
 
   <!-- ========================================================= -->
-  <!-- APPLICATION LOGIC, GA4 ANALYTICS & PIXEL CHECKER          -->
+  <!-- APPLICATION LOGIC (PURE BROWSER FB PIXEL)                 -->
   <!-- ========================================================= -->
   <script>
     const UNIT_PRICE = 899;
@@ -850,9 +720,6 @@
       tgChatId: '9092823495',
       bkashNumber: '01940080878',
       nagadNumber: '01570200693',
-      capiUrl: '',
-      capiTestCode: '',
-      ga4Id: '',
       adminPin: '1234',
     };
 
@@ -861,6 +728,13 @@
     let deliveryArea = 'dhaka';
     let paymentMethod = 'COD';
     let hasInitiatedCheckout = false;
+
+    // --- Pure Browser Meta Pixel Tracker ---
+    function trackPixelEvent(eventName, customData = {}) {
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', eventName, customData);
+      }
+    }
 
     // --- Secret Admin Triggers ---
     let secretTapCount = 0;
@@ -899,31 +773,8 @@
       return JSON.parse(localStorage.getItem('zayro_orders') || '[]');
     }
 
-    function getEventLogs() {
-      return JSON.parse(localStorage.getItem('zayro_events') || '[]');
-    }
-
-    function getDeviceType() {
-      return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(navigator.userAgent) ? 'Mobile' : 'Desktop';
-    }
-
-    // Load GA4 dynamically if configured
-    (function initOptionalGA4() {
-      const s = getSettings();
-      if (s.ga4Id && s.ga4Id.startsWith('G-')) {
-        const sc = document.createElement('script');
-        sc.async = true;
-        sc.src = `https://www.googletagmanager.com/gtag/js?id=${s.ga4Id}`;
-        document.head.appendChild(sc);
-        window.dataLayer = window.dataLayer || [];
-        window.gtag = function(){ dataLayer.push(arguments); };
-        gtag('js', new Date());
-        gtag('config', s.ga4Id);
-      }
-    })();
-
     function trackWhatsAppContact() {
-      trackServerAndPixelEvent('Contact', { method: 'WhatsApp' });
+      trackPixelEvent('Contact', { method: 'WhatsApp' });
     }
 
     function copyMerchantNumber() {
@@ -955,63 +806,6 @@
     function getHoodieVisualHTML(colorName, sizeClass = 'w-full h-full object-contain') {
       const c = COLORS.find(col => col.name === colorName) || COLORS[0];
       return `<img src="${c.imgUrl}" alt="ZAYRO ${c.name} Jeep Spirit Hoodie" class="${sizeClass}" loading="eager" />`;
-    }
-
-    async function trackServerAndPixelEvent(eventName, customData = {}) {
-      const eventId = `evt_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`;
-      const settings = getSettings();
-      const device = getDeviceType();
-
-      // 1. Fire Meta Pixel
-      let pixelFired = false;
-      if (typeof window.fbq === 'function') {
-        window.fbq('track', eventName, customData, { eventID: eventId });
-        pixelFired = true;
-      }
-
-      // 2. Fire GA4 if configured
-      if (typeof window.gtag === 'function') {
-        const gaMap = { PageView: 'page_view', ViewContent: 'view_item', AddToCart: 'add_to_cart', InitiateCheckout: 'begin_checkout', Purchase: 'purchase', Contact: 'generate_lead' };
-        window.gtag('event', gaMap[eventName] || eventName, { currency: 'BDT', ...customData });
-      }
-
-      // 3. Server-Side CAPI Payload
-      const serverPayload = {
-        event_name: eventName,
-        event_time: Math.floor(Date.now() / 1000),
-        event_id: eventId,
-        action_source: 'website',
-        event_source_url: window.location.href,
-        custom_data: { currency: 'BDT', ...customData },
-        user_agent: navigator.userAgent,
-        test_event_code: settings.capiTestCode || undefined,
-      };
-
-      let serverStatus = pixelFired ? 'Pixel + Local Tracker' : 'Local Tracker';
-
-      if (settings.capiUrl && settings.capiUrl.startsWith('http')) {
-        try {
-          await fetch(settings.capiUrl, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(serverPayload),
-          });
-          serverStatus = 'Sent to CAPI Server ✅';
-        } catch (err) {
-          serverStatus = 'CAPI Webhook Error ⚠️';
-        }
-      }
-
-      const logs = getEventLogs();
-      logs.unshift({
-        id: eventId,
-        eventName,
-        data: customData,
-        device,
-        status: serverStatus,
-        time: new Date().toLocaleTimeString(),
-      });
-      localStorage.setItem('zayro_events', JSON.stringify(logs.slice(0, 200)));
     }
 
     function renderColorPreviews() {
@@ -1072,7 +866,7 @@
         renderItems();
       }
 
-      trackServerAndPixelEvent('ViewContent', { content_name: c.name, value: UNIT_PRICE, currency: 'BDT' });
+      trackPixelEvent('ViewContent', { content_name: c.name, value: UNIT_PRICE, currency: 'BDT' });
     }
 
     function orderSelectedPreviewColor() {
@@ -1126,7 +920,7 @@
     function addItem() {
       items.push({ id: `item-${Date.now()}`, color: COLORS[selectedPreviewIndex].name, size: 'L' });
       renderItems();
-      trackServerAndPixelEvent('AddToCart', {
+      trackPixelEvent('AddToCart', {
         content_name: COLORS[selectedPreviewIndex].name,
         num_items: items.length,
         value: items.length * UNIT_PRICE,
@@ -1144,7 +938,7 @@
       items = items.map(i => i.id === id ? { ...i, [field]: value } : i);
       if (field === 'color') {
         renderItems();
-        trackServerAndPixelEvent('AddToCart', {
+        trackPixelEvent('AddToCart', {
           content_name: value,
           num_items: items.length,
           value: items.length * UNIT_PRICE,
@@ -1226,7 +1020,7 @@
       if (!hasInitiatedCheckout) {
         hasInitiatedCheckout = true;
         const { grandTotal } = calculatePricing();
-        trackServerAndPixelEvent('InitiateCheckout', {
+        trackPixelEvent('InitiateCheckout', {
           num_items: items.length,
           value: grandTotal,
           currency: 'BDT',
@@ -1287,24 +1081,24 @@
 
       const bdPhoneRegex = /^(?:\+?88)?01[3-9]\d{8}$/;
       if (!name) {
-        errBox.textContent = 'দয়া করে আপনার সম্পূর্ণ নাম লিখুন।';
+        errBox.textContent = 'দয়া করে আপনার সম্পূর্ণ নাম লিখুন।';
         errBox.classList.remove('hidden');
         return;
       }
       if (!bdPhoneRegex.test(phone.replace(/[\s-]/g, ''))) {
-        errBox.textContent = 'দয়া করে সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন (যেমন: 017XXXXXXXX)।';
+        errBox.textContent = 'দয়া করে সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন (যেমন: 017XXXXXXXX)।';
         errBox.classList.remove('hidden');
         return;
       }
       if (address.length < 6) {
-        errBox.textContent = 'দয়া করে আপনার সম্পূর্ণ ডেলিভারি ঠিকানা লিখুন।';
+        errBox.textContent = 'দয়া করে আপনার সম্পূর্ণ ডেলিভারি ঠিকানা লিখুন।';
         errBox.classList.remove('hidden');
         return;
       }
 
       if (paymentMethod !== 'COD') {
         if (!bdPhoneRegex.test(mfsSender.replace(/[\s-]/g, '')) || mfsTrxId.length < 4) {
-          errBox.textContent = `দয়া করে ${paymentMethod} প্রেরকের নম্বর এবং সঠিক Transaction ID দিন।`;
+          errBox.textContent = `দয়া করে ${paymentMethod} প্রেরকের নম্বর এবং সঠিক Transaction ID দিন।`;
           errBox.classList.remove('hidden');
           return;
         }
@@ -1335,12 +1129,12 @@
       orders.unshift(newOrder);
       localStorage.setItem('zayro_orders', JSON.stringify(orders));
 
-      trackServerAndPixelEvent('Purchase', {
+      // Fire Purchase Event to Browser Meta Pixel
+      trackPixelEvent('Purchase', {
         value: grandTotal,
         currency: 'BDT',
-        order_id: orderId,
-        num_items: items.length,
         content_type: 'product',
+        num_items: items.length,
       });
 
       sendTelegramOrderAlert(newOrder);
@@ -1384,7 +1178,7 @@
       `;
     }
 
-    // --- GA4 Style Admin Panel Logic ---
+    // --- Admin Panel Logic ---
     function openAdminModal() {
       document.getElementById('admin-modal').classList.remove('hidden');
       lucide.createIcons();
@@ -1408,7 +1202,7 @@
     }
 
     function switchAdminTab(tab) {
-      ['analytics', 'orders', 'settings'].forEach(t => {
+      ['orders', 'settings'].forEach(t => {
         document.getElementById(`admin-tab-${t}`).classList.add('hidden');
         document.getElementById(`tab-btn-${t}`).className =
           'px-3.5 py-2 rounded-lg bg-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer flex items-center gap-1.5';
@@ -1422,118 +1216,30 @@
     function checkLivePixelStatus() {
       const badge = document.getElementById('pixel-live-status');
       const detail = document.getElementById('pixel-status-detail');
-      const isFileProtocol = window.location.protocol === 'file:';
       const fbqReady = typeof window.fbq === 'function';
       const fbeventsLoaded = !!(window.fbq && window.fbq.loaded && window.fbq.version);
 
-      if (isFileProtocol) {
-        badge.className = 'text-xs font-extrabold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40';
-        badge.textContent = '🟡 Local File Mode (Code Active)';
-        detail.textContent = 'পিক্সেল কোড (4359430210987692) ঠিক আছে। লাইভ হোস্টিং (HTTPS) এ আপলোড করলেই Meta Events Manager-এ Active দেখাবে।';
-      } else if (fbqReady && fbeventsLoaded) {
+      if (fbqReady && fbeventsLoaded) {
         badge.className = 'text-xs font-extrabold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40';
-        badge.textContent = '🟢 ACTIVE & SENDING (4359430210987692)';
-        detail.textContent = 'Facebook fbevents.js সফলভাবে লোড হয়েছে এবং লাইভ ইভেন্ট পাঠাচ্ছে।';
+        badge.textContent = '🟢 ACTIVE (4359430210987692)';
+        detail.textContent = 'Browser Meta Pixel সঠিকভাবে লোড হয়েছে এবং ইভেন্ট পাঠাচ্ছে।';
       } else {
         badge.className = 'text-xs font-extrabold px-2.5 py-0.5 rounded-full bg-red-500/20 text-red-400 border border-red-500/40';
-        badge.textContent = '🔴 Blocked by AdBlocker / Browser';
-        detail.textContent = 'কোড সেট করা আছে, তবে আপনার ব্রাউজারের AdBlocker ফেসবুক স্ক্রিপ্টটি আটকে দিয়েছে।';
+        badge.textContent = '🔴 Blocked by AdBlocker';
+        detail.textContent = 'কোড ঠিক আছে, তবে আপনার ব্রাউজারের AdBlocker স্ক্রিপ্টটি আটকে দিয়েছে।';
       }
     }
 
     function fireTestPixelEvent() {
-      trackServerAndPixelEvent('ViewContent', { content_name: 'Admin Pixel Test', value: 899, currency: 'BDT' });
-      loadAdminDashboard();
-      alert('✅ Test Pixel & Server Event ফায়ার হয়েছে! নিচের Realtime Stream-এ দেখুন।');
+      trackPixelEvent('ViewContent', { content_name: 'Admin Pixel Test', value: 899, currency: 'BDT' });
+      alert('✅ Test Pixel Event পাঠানো হয়েছে!');
     }
 
     function loadAdminDashboard() {
       const orders = getOrders();
-      const events = getEventLogs();
       const settings = getSettings();
-
       checkLivePixelStatus();
 
-      // Count GA4 Metrics
-      const countBy = (name) => events.filter(e => e.eventName === name).length;
-      const visitors = Math.max(countBy('PageView'), 1);
-      const views = countBy('ViewContent');
-      const atc = countBy('AddToCart');
-      const checkouts = countBy('InitiateCheckout');
-      const purchases = Math.max(countBy('Purchase'), orders.length);
-      const waClicks = countBy('Contact');
-      const convRate = visitors > 0 ? ((purchases / visitors) * 100).toFixed(1) : '0.0';
-      const revenue = orders.reduce((acc, o) => acc + (o.grandTotal || 0), 0);
-
-      document.getElementById('ga-visitors').textContent = visitors;
-      document.getElementById('ga-views').textContent = views;
-      document.getElementById('ga-atc').textContent = atc;
-      document.getElementById('ga-checkout').textContent = checkouts;
-      document.getElementById('ga-purchase').textContent = purchases;
-      document.getElementById('ga-conv-rate').textContent = `${convRate}% Conv. Rate`;
-      document.getElementById('ga-revenue').textContent = `৳${revenue}`;
-      document.getElementById('ga-whatsapp').textContent = `${waClicks} WA Leads`;
-
-      // GA4 Funnel Bars
-      const funnelData = [
-        { label: '1. Page Visitors (PageView)', count: visitors, color: 'bg-blue-500' },
-        { label: '2. Product Views (ViewContent)', count: views, color: 'bg-cyan-500' },
-        { label: '3. Add to Cart (AddToCart)', count: atc, color: 'bg-amber-500' },
-        { label: '4. Checkout Started (InitiateCheckout)', count: checkouts, color: 'bg-purple-500' },
-        { label: '5. Order Completed (Purchase)', count: purchases, color: 'bg-emerald-500' },
-      ];
-      document.getElementById('ga-funnel-bars').innerHTML = funnelData.map(step => {
-        const pct = Math.min(100, Math.round((step.count / visitors) * 100));
-        return `
-          <div>
-            <div class="flex justify-between font-bold text-zinc-300 mb-1">
-              <span>${step.label}</span>
-              <span>${step.count} (${pct}%)</span>
-            </div>
-            <div class="w-full h-2.5 bg-zinc-900 rounded-full overflow-hidden">
-              <div class="${step.color} h-full rounded-full transition-all" style="width: ${pct}%"></div>
-            </div>
-          </div>
-        `;
-      }).join('');
-
-      // Device Stats
-      const mobileCount = events.filter(e => e.device === 'Mobile').length;
-      const desktopCount = events.filter(e => e.device === 'Desktop').length;
-      document.getElementById('ga-device-stats').innerHTML = `
-        <div class="bg-zinc-900 border border-zinc-800 p-2.5 rounded-lg">
-          <span class="text-zinc-400 font-bold">📱 Mobile Events</span>
-          <p class="text-base font-black text-white">${mobileCount}</p>
-        </div>
-        <div class="bg-zinc-900 border border-zinc-800 p-2.5 rounded-lg">
-          <span class="text-zinc-400 font-bold">💻 Desktop Events</span>
-          <p class="text-base font-black text-white">${desktopCount}</p>
-        </div>
-      `;
-
-      // Color Popularity Stats
-      document.getElementById('ga-color-stats').innerHTML = COLORS.map(c => {
-        const cViews = events.filter(e => JSON.stringify(e.data).includes(c.name)).length;
-        return `
-          <div class="flex justify-between items-center bg-zinc-900/60 px-2.5 py-1.5 rounded">
-            <span class="font-bold text-zinc-300">${c.name}</span>
-            <span class="font-bold text-amber-400">${cViews} actions</span>
-          </div>
-        `;
-      }).join('');
-
-      // Realtime Event Table
-      document.getElementById('admin-tracker-logs').innerHTML = events.slice(0, 30).map(ev => `
-        <tr class="hover:bg-zinc-900/50">
-          <td class="px-3 py-2 font-black text-blue-400">${ev.eventName}</td>
-          <td class="px-3 py-2 text-zinc-300">${JSON.stringify(ev.data)}</td>
-          <td class="px-3 py-2 text-zinc-400 font-bold">${ev.device || 'Web'}</td>
-          <td class="px-3 py-2 text-emerald-400 font-bold">${ev.status}</td>
-          <td class="px-3 py-2 text-zinc-500 whitespace-nowrap">${ev.time}</td>
-        </tr>
-      `).join('');
-
-      // Orders List
       const ordersList = document.getElementById('admin-orders-list');
       if (orders.length === 0) {
         ordersList.innerHTML = '<p class="text-xs text-zinc-500 font-bold text-center py-6">এখনো কোনো অর্ডার আসেনি।</p>';
@@ -1561,9 +1267,6 @@
       document.getElementById('cfg-bkash').value = settings.bkashNumber;
       document.getElementById('cfg-nagad').value = settings.nagadNumber;
       document.getElementById('cfg-pin').value = settings.adminPin;
-      document.getElementById('cfg-capi-url').value = settings.capiUrl;
-      document.getElementById('cfg-capi-test').value = settings.capiTestCode;
-      document.getElementById('cfg-ga4-id').value = settings.ga4Id || '';
       lucide.createIcons();
     }
 
@@ -1580,11 +1283,6 @@
       loadAdminDashboard();
     }
 
-    function clearEventLogs() {
-      localStorage.removeItem('zayro_events');
-      loadAdminDashboard();
-    }
-
     function saveSettings() {
       const updated = {
         tgToken: document.getElementById('cfg-tg-token').value.trim(),
@@ -1592,9 +1290,6 @@
         bkashNumber: document.getElementById('cfg-bkash').value.trim(),
         nagadNumber: document.getElementById('cfg-nagad').value.trim(),
         adminPin: document.getElementById('cfg-pin').value.trim() || '1234',
-        capiUrl: document.getElementById('cfg-capi-url').value.trim(),
-        capiTestCode: document.getElementById('cfg-capi-test').value.trim(),
-        ga4Id: document.getElementById('cfg-ga4-id').value.trim(),
       };
       localStorage.setItem('zayro_settings_v4', JSON.stringify(updated));
       alert('✅ Settings Saved Successfully!');
@@ -1618,7 +1313,7 @@
         grandTotal: 969,
         createdAt: new Date().toLocaleString(),
       });
-      alert('✅ Test Alert টেলিগ্রামে পাঠানো হয়েছে!');
+      alert('✅ Test Alert টেলিগ্রামে পাঠানো হয়েছে!');
     }
 
     function exportOrdersCSV() {
@@ -1639,7 +1334,6 @@
     // --- Initial Boot ---
     renderColorPreviews();
     renderItems();
-    trackServerAndPixelEvent('PageView', { page: 'ZAYRO Jeep Spirit Hoodie Landing' });
     checkUrlForAdmin();
     lucide.createIcons();
   </script>
